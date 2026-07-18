@@ -93,7 +93,7 @@ long map(long, long, long, long, long);
 typedef bool boolean;
 typedef uint8_t byte;
 typedef unsigned int word;
-#define yield() 
+void yield() {}
 /* system functions */
 int main( void );
 void init( void );
