@@ -28,7 +28,6 @@
 #include "asr6601_spi.h"
 #include "utilities.h"
 #include "pins_arduino.h"
-#include "sx126x-board.h"
 
 #ifdef __cplusplus 
 		extern "C" {

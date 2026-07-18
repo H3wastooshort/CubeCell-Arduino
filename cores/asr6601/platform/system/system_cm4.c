@@ -32,8 +32,6 @@ void boardInitMcu( void )
     delay(100);
     systime = (uint32_t)RtcGetTimerValue();
     srand(analogRead(11)+analogRead(4)+analogRead(5)+analogRead(8)+analogRead(47));
-    SX126xInit();
-    sx126xSleep();
 }
 
 

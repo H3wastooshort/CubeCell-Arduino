@@ -1,6 +1,5 @@
 #include <string.h>
 #include "tremo_flash.h"
-#include "sx126x-board.h"
 
 /**
  * @brief Erase all the flash main area

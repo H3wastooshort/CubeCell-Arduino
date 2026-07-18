@@ -60,7 +60,6 @@ Maintainer: Miguel Luis, Gregory Cristian and Wael Guibene
 
 /* Includes ------------------------------------------------------------------*/
 #include <time.h>
-#include "sx126x-board.h"
 #include "timer.h"
 #include "rtc-board.h"
 #include "ASR_Arduino.h"
