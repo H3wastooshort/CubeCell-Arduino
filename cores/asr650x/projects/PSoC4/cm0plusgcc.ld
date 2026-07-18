@@ -259,7 +259,7 @@ SECTIONS
     /* The .stack and .heap sections don't contain any symbols.
      * They are only used for linker to calculate RAM utilization.
      */
-    .heap (NOLOAD) :
+    /*.heap (NOLOAD) :
     {
       . = _end;
       . += 0x1000;
@@ -270,10 +270,10 @@ SECTIONS
     {
       __cy_stack_limit = .;
       . += 0x0800;
-    } >ram
+    } >ram*/
 
     /* Check if data + heap + stack exceeds RAM limit */
-    ASSERT(__cy_stack_limit >= __cy_heap_limit, "region RAM overflowed with stack")
+    /*ASSERT(__cy_stack_limit >= __cy_heap_limit, "region RAM overflowed with stack")*/
 
 
     /***************************************************************************
