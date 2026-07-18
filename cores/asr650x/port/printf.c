@@ -853,6 +853,7 @@ int _vsnprintf(out_fct_type out, char* buffer, const size_t maxlen, const char* 
 
 ///////////////////////////////////////////////////////////////////////////////
 
+__attribute__((__used__))
 int __wrap_printf(const char* format, ...)
 {
   va_list va;
@@ -863,7 +864,7 @@ int __wrap_printf(const char* format, ...)
   return ret;
 }
 
-
+__attribute__((__used__))
 int __wrap_sprintf(char* buffer, const char* format, ...)
 {
   va_list va;
@@ -873,7 +874,7 @@ int __wrap_sprintf(char* buffer, const char* format, ...)
   return ret;
 }
 
-
+__attribute__((__used__))
 int __wrap_snprintf(char* buffer, size_t count, const char* format, ...)
 {
   va_list va;
